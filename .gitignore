@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Pre-commit files
+hooks
+.pre-commit-config.yaml
