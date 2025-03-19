@@ -8,10 +8,13 @@
   min-height: 737px;
   overflow: hidden;
 
-  @media only screen and (min-width: var(--tablet)) {
+  @media only screen and (min-width: 768px) {
     border-radius: 30px;
+    padding: 64px 32px;
+    min-height: 950px;
   }
 }
+
 .middle-banner-title {
   color: var(--white);
   font-family: Manrope;
@@ -19,6 +22,12 @@
   font-weight: 700;
   line-height: 1.05;
   margin-bottom: 65px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 1.17;
+    margin-bottom: 83px;
+  }
 }
 .title-accent {
   color: var(--text-accent);
@@ -26,13 +35,25 @@
 
 .bg-relative-div {
   position: relative;
+
+  display: flex;
+  justify-content: center;
 }
 
 .layer {
   position: absolute;
-  width: 295px;
-  height: 408px;
+  width: 240px;
+  min-height: 408px;
   border-radius: 16px;
+
+  @media only screen and (min-width: 375px) {
+    width: 295px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 688px;
+    height: 500px;
+  }
 }
 
 .background-layer {
@@ -48,6 +69,11 @@
 .middle-banner-content {
   background-color: var(--white);
   padding: 40px 20px;
+
+  @media only screen and (min-width: 768px) {
+    padding: 65px 32px;
+    position: relative;
+  }
 }
 .package-title {
   color: var(--black);
@@ -57,6 +83,10 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   margin-bottom: 20px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 40px;
+  }
 }
 .package-list {
   display: flex;
@@ -64,6 +94,9 @@
   justify-content: center;
   gap: 16px;
   margin-bottom: 20px;
+  @media only screen and (min-width: 768px) {
+    max-width: 449px;
+  }
 }
 .package-list-item {
   color: var(--black);
@@ -74,17 +107,48 @@
   letter-spacing: -0.02em;
   position: relative;
   padding-left: 28px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+    padding-left: 44px;
+  }
 }
 
-.check-mark-icon {
+.check-mark {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--green);
+  border-radius: 50%;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.check-mark-icon {
+  stroke: var(--white);
+  fill: none;
+  width: 15px;
+  height: 15px;
+
+  @media only screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .application-link {
-  padding: 14px 58px;
+  padding: 14px 0;
+  width: 100%;
   border-radius: 12px;
   background-color: var(--green);
   color: var(--white);
@@ -92,7 +156,26 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.71;
+  white-space: nowrap;
+  text-align: center;
+
+  @media only screen and (min-width: 375px) {
+    padding: 14px 58px;
+  }
+  @media only screen and (min-width: 768px) {
+    padding: 16px 64px;
+    font-size: 18px;
+    line-height: 1.56;
+    width: auto;
+  }
 }
 .bookstack {
   display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    right: -50px;
+    top: 174px;
+  }
 }
