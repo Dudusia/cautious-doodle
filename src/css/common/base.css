@@ -14,6 +14,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* CSS Variables */
+  --black: #121417;
+  --green: #4dc274;
+  --green-hover: #38ae5f;
+  --green_linear: linear-gradient(85deg, var(--green) 2.25%, #bee8cc 131.25%);
+  --light-green: #d4fde1;
+  --gray: #f3f5f6;
+  --white: #fff;
+
+  /* Breakpoints */
+  --mobile: 320px;
+  --mobile-lg: 375px;
+  --tablet: 768px;
+  --desktop: 1280px;
 }
 
 body {
@@ -26,7 +41,14 @@ body {
 
 main {
   flex-grow: 1;
+  margin: 0 auto;
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+@media (min-width: 1280px) {
+  main {
+    max-width: 1152px;
+  }
 }
