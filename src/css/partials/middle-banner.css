@@ -1,0 +1,98 @@
+.middle-banner {
+}
+.middle-banner-wrapper {
+  border-radius: 16px;
+
+  background: var(--green_linear);
+  padding: 40px 20px;
+  min-height: 737px;
+  overflow: hidden;
+
+  @media only screen and (min-width: var(--tablet)) {
+    border-radius: 30px;
+  }
+}
+.middle-banner-title {
+  color: var(--white);
+  font-family: Manrope;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 65px;
+}
+.title-accent {
+  color: var(--text-accent);
+}
+
+.bg-relative-div {
+  position: relative;
+}
+
+.layer {
+  position: absolute;
+  width: 295px;
+  height: 408px;
+  border-radius: 16px;
+}
+
+.background-layer {
+  transform: rotate(-9deg);
+  background: var(--light-green);
+}
+
+.background-layer.second {
+  transform: rotate(11deg);
+  background: var(--green-layer-angle);
+}
+
+.middle-banner-content {
+  background-color: var(--white);
+  padding: 40px 20px;
+}
+.package-title {
+  color: var(--black);
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+.package-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.package-list-item {
+  color: var(--black);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: -0.02em;
+  position: relative;
+  padding-left: 28px;
+}
+
+.check-mark-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.application-link {
+  padding: 14px 58px;
+  border-radius: 12px;
+  background-color: var(--green);
+  color: var(--white);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+}
+.bookstack {
+  display: none;
+}
