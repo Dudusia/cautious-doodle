@@ -30,6 +30,26 @@
   display: none;
 }
 
+@media only screen and (min-width: 1280px) {
+  .header-item {
+    position: relative;
+  }
+
+  .header-item::after {
+    display: none;
+    content: '';
+    width: 37px;
+    height: 2px;
+    background-color: var(--green);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+  }
+  .header-item.is-active:after {
+    display: block;
+  }
+}
+
 .burger-menu-button {
   background-color: transparent;
   border: none;
@@ -92,7 +112,7 @@
 
   .header-socials-link:hover {
     color: var(--green);
-    border-color: rgba(77, 194, 116, 0.10);
+    border-color: rgba(77, 194, 116, 0.1);
     transition-property: border-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
