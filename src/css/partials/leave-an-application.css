@@ -1,0 +1,380 @@
+.application {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 30px 20px;
+    margin-bottom: 57px;
+}
+
+.application_header {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.application_left_right {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.application_hide {
+    display: none;
+}
+
+.application_text {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.submit_text {
+    width: 335px;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0;
+    text-align: start;
+    color: rgba(18, 20, 23, 0.5)
+}
+
+.application_subtitle {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0;
+    color: rgba(18, 20, 23, 0.8);
+    max-width: 709px;
+}
+
+.application_highlight {
+    display: inline-block;
+    position: relative;
+}
+
+.application_highlight-text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.13;
+    letter-spacing: -0.02em;
+
+    position: relative;
+    z-index: 2;
+}
+
+.application_highlight-box {
+    position: absolute;
+    top: 23px;
+    left: -1px;
+
+    width: 172px;
+    height: 12px;
+    background-color: #BEE8CC;
+    border-radius: 8px;
+
+    z-index: 1;
+}
+
+/* Form inputs */
+
+.apply_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.application_text_inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.application_form_input {
+    width: 335px;
+    height: 50px;
+    background: none;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 12px;
+    margin-bottom: 18px;
+    padding: 16px 0;
+    padding-left: 18px;
+}
+
+.application_form_input:focus {
+    border-color: var(--green);
+    outline: none;
+}
+
+.application_form_input::placeholder {
+    color: var(--black);
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.29;
+}
+
+.application_form_comment {
+    width: 335px;
+    height: 94px;
+    background: none;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 12px;
+    padding: 16px 0;
+    padding-left: 18px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.application_form_comment:focus {
+    border-color: var(--green);
+    outline: none;
+}
+
+.application_form_comment::placeholder {
+    color: var(--black);
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.29;
+}
+
+/* Teachers options */
+
+.options {
+    text-align: start;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 14px;
+}
+
+.teachers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 40px;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.71;
+}
+
+.application_button {
+    width: 335px;
+    height: 52px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--green);
+    margin-bottom: 16px;
+    color: var(--white);
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1.71;
+}
+
+.application_button:focus,
+.application_button:hover {
+    background-color: var(--green-hover);
+}
+
+/* Radio-buttons */
+
+.application_radio_label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.application_radio_label input {
+    display: none;
+}
+
+.custom_radio {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(18, 20, 23, 0.2);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+}
+
+.application_radio_label input:checked+.custom_radio {
+    border-color: var(--green);
+}
+
+.application_radio_label input:checked+.custom_radio::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: var(--green);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+
+    .application {
+        margin-bottom: 70px;
+    }
+
+    .application_header {
+        margin-bottom: 64px;
+        gap: 16px;
+    }
+
+    .application_highlight-box {
+        position: absolute;
+        top: 32px;
+        left: -3px;
+
+        width: 208px;
+        height: 20px;
+        border-radius: 8px;
+
+        z-index: 1;
+    }
+
+    .teachers {
+        flex-direction: row;
+    }
+
+    .application_header {
+        margin-left: 59px;
+        margin-right: 59px;
+    }
+
+    .application_text_inputs {
+        align-items: center;
+    }
+
+    .application_form_input {
+        width: 500px;
+        height: 56px;
+    }
+
+    .application_form_input::placeholder {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .application_form_comment {
+        width: 500px;
+        height: 104px;
+        margin-bottom: 32px;
+    }
+
+    .application_form_comment::placeholder {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .options {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+
+    .custom-radio {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .teachers {
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .apply_form {
+        align-items: center;
+    }
+
+    .submit_text {
+        width: 500px;
+        font-weight: 14;
+        line-height: 1.71;
+    }
+
+    .application_button {
+        font-size: 18px;
+        line-height: 1.56;
+        width: 500px;
+    }
+
+    .application_highlight-text {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .application_subtitle {
+        font-size: 18px;
+        line-height: 1.67;
+        color: rgba(18, 20, 23, 0.5)
+    }
+
+}
+
+/* Desktop breakpoint */
+
+@media (min-width: 1280px) {
+    .application_hide {
+        display: block;
+    }
+
+    .application_container_left {
+        width: 492px;
+        text-align: center;
+        border-radius: 30px;
+        overflow: hidden;
+        background-color: var(--green);
+        height: 578px;
+    }
+
+    .application_card_content {
+        padding: 20px 20px 40px 20px;
+        background-color: none;
+        margin-bottom: 120px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .application_image {
+        position: relative;
+        width: 100%;
+    }
+
+    .application_left_header {
+        font-family: "Manrope", sans-serif;
+        font-size: 40px;
+        letter-spacing: -0.02em;
+        font-weight: 700;
+        line-height: 1.2;
+        color: var(--white);
+        margin-bottom: 8px;
+    }
+
+    .application_left_subtitle {
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        letter-spacing: 0;
+        font-weight: 400;
+        line-height: 1.5;
+        color: var(--white);
+        opacity: 0.7;
+    }
+
+}
