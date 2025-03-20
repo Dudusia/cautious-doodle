@@ -37,11 +37,11 @@
   }
 }
 
-.mobile-menu > nav {
+.mobile-nav-links {
   margin: auto 0;
 }
 
-.mobile-menu > nav > ul {
+.mobile-nav-links ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -61,11 +61,6 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
-
-.mobile-menu > nav a {
-  font-size: 14px;
-  font-weight: 600;
 }
 
 .mobile-socials-link {
