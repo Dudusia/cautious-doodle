@@ -23,6 +23,7 @@ a {
   color: currentColor;
   text-decoration: none;
   white-space: nowrap;
+  outline: none;
 }
 
 svg {
