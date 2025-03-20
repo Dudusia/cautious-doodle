@@ -18,17 +18,6 @@
   align-items: center;
 }
 
-.about-us__highlight::after {
-  display: block;
-  content: '';
-  width: 100%;
-  height: 12px;
-  background-color: var(--text-accent);
-  position: absolute;
-  bottom: 4px;
-  border-radius: 8px;
-}
-
 .about-us__highlight-text {
   font-weight: 700;
   font-size: 40px;
