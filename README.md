@@ -15,6 +15,13 @@ looking for a robust starting point for web projects.
 Experience the live version of the project here:
 [https://antmuraha.github.io/cautious-doodle/](https://antmuraha.github.io/cautious-doodle/)
 
+## PageSpeed Insights Test
+
+This repository is used to analyze and optimize web performance using Google
+PageSpeed Insights.  
+For the latest test results, visit:
+[PageSpeed Insights](https://pagespeed.web.dev/analysis/https-antmuraha-github-io-cautious-doodle/uqeryk9jld?form_factor=mobile)
+
 ## Project Structure as a Base
 
 The structure of this project is intentionally designed to be reused as a
