@@ -19,8 +19,13 @@ ul {
 }
 
 a {
+  display: inline-block;
   color: currentColor;
   text-decoration: none;
+}
+
+svg {
+  display: inline-block;
 }
 
 button {

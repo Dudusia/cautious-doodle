@@ -33,6 +33,7 @@
 .burger-menu-button {
   background-color: transparent;
   border: none;
+  padding: 0px;
 }
 
 .burger-menu-icon {
