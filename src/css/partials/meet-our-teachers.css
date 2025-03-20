@@ -1,0 +1,79 @@
+.meet-our-teachers {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -2%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #38761d;
+}
+
+.section-description {
+  max-width: 709px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+  color: #12141780;
+}
+
+.teachers-grid {
+  display: grid;
+  gap: 32px;
+  align-items: start;
+  padding: auto;
+}
+
+.teacher-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.teacher-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.teacher-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.teacher-description {
+  font-size: 16px;
+  color: #12141780;
+  line-height: 1.4;
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  /* Cards in two columns */
+  .teachers-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 1280px) {
+  .teachers-grid {
+    max-width: 1024px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
