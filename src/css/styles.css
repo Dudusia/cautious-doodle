@@ -10,6 +10,12 @@
 @import url('./common/container.css');
 @import url('./common/animations.css');
 
+/* Controls style */
+@import url('./partials/controls/link-icon.css');
+
+/* Components style */
+@import url('./partials/components/social-links.css');
+
 /* Sections style */
 @import url('./partials/header.css');
 @import url('./partials/top-banner.css');

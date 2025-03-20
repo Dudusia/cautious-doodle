@@ -63,17 +63,11 @@
   cursor: pointer;
 }
 
-.mobile-menu > .socials {
-  display: flex;
-  gap: 12px;
-  line-height: 0;
-}
-
 .mobile-menu > nav a {
   font-size: 14px;
   font-weight: 600;
 }
 
-.mobile-menu > .socials a {
-  padding: 8px;
+.mobile-socials-link {
+  border-color: rgba(255, 255, 255, 0.1);
 }

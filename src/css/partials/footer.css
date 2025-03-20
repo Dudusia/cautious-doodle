@@ -81,9 +81,23 @@
   fill: var(--white);
 }
 
-.socials-link:hover,
-.socials-link:focus {
-  fill: var(--green);
+.footer-socials-link {
+  border-color: rgba(255, 255, 255, 0.10);
+  color: var(--white);
+}
+
+.footer-socials-link:hover {
+  color: var(--green);
+  border-color: rgba(77, 194, 116, 0.10);
+  transition-property: border-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  svg {
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
 }
 
 .legal-container {
