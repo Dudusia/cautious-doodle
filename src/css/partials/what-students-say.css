@@ -1,102 +1,104 @@
 .students-section-title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: #121417;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121417;
+  position: relative;
+  z-index: 2;
 }
 
 .students-section-text {
-    font-weight: 400;
-    margin-top: 16px;
-    font-size: 18px;
-    line-height: 1.66667;
-    text-align: center;
-    color: rgba(18, 20, 23, 0.5);
+  font-weight: 400;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.66667;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
 }
 
 .students-cards {
-    display: flex;
-    margin-top: 64px;
-    gap: 32px;
-    flex-wrap: wrap;
+  display: flex;
+  margin-top: 64px;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 .students-card {
-    width: 320px;
-    height: 326px;
-    border-radius: 30px;
-    background: #F3F5F6;
-    padding: 32px 16px 0px 16px;
-    flex: 1 1 100%;
+  width: 320px;
+  height: 326px;
+  border-radius: 30px;
+  background: #f3f5f6;
+  padding: 32px 16px 0px 16px;
+  flex: 1 1 100%;
 }
 
 @media (min-width: 768px) {
-    .students-card {
-        flex: 1 1 calc(50% - 23px);
-    }
+  .students-card {
+    flex: 1 1 calc(50% - 23px);
+  }
 }
 
 @media (min-width: 1280px) {
-    .students-card {
-        flex: 1 1 calc(33.333% - 23px);
-    }
+  .students-card {
+    flex: 1 1 calc(33.333% - 23px);
+  }
 }
 
 .students-item {
-    height: 78px;
-    padding: 14px 16px;
-    background: #4DC274;
-    border-radius: 15px;
+  height: 78px;
+  padding: 14px 16px;
+  background: #4dc274;
+  border-radius: 15px;
 }
 
 .students-img {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .students-title {
-    margin-top: 4px;
-    margin-left: 58px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: #fff;
-    width: 84px;
-    height: 24px;
-    line-height: 24px;
-    color: #FFFFFF;
+  margin-top: 4px;
+  margin-left: 58px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #fff;
+  width: 84px;
+  height: 24px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 .students-text {
-    margin-top: 2px;
-    margin-left: 58px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.33333;
-    color: rgba(255, 255, 255, 0.5);
+  margin-top: 2px;
+  margin-left: 58px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .students-story {
-    padding: 32px 32px 0px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: rgba(18, 20, 23, 0.5);
+  padding: 32px 32px 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(18, 20, 23, 0.5);
 }
 
 /* ANIMATION !!! */
 .students-card:hover,
 .students-card:focus {
-    transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 .students-card {
-    box-shadow: 0px 3px 3px -2px rgb(242, 4, 4),
-        0px 3px 4px 0px rgb(187, 255, 0), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
-    transition: transform 250ms ease-in-out;
+  box-shadow: 0px 3px 3px -2px rgb(242, 4, 4), 0px 3px 4px 0px rgb(187, 255, 0),
+    0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+  transition: transform 250ms ease-in-out;
 }
