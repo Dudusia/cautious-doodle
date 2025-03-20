@@ -33,6 +33,7 @@
 .burger-menu-button {
   background-color: transparent;
   border: none;
+  padding: 0px;
 }
 
 .burger-menu-icon {
@@ -87,8 +88,20 @@
 
   .header-socials {
     display: flex;
-    gap: 12px;
-    align-items: center;
+  }
+
+  .header-socials-link:hover {
+    color: var(--green);
+    border-color: rgba(77, 194, 116, 0.10);
+    transition-property: border-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    svg {
+      transition-property: color;
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--transition-timing-function);
+    }
   }
 
   .socials-link {
