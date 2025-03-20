@@ -22,5 +22,14 @@
     <symbol id="icon-close" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" stroke="currentColor" d="M24 8 8 24M8 8l16 16"/>
     </symbol>
+
+    <symbol id="icon-check" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M26.667 8l-14.667 14.667-6.667-6.667"></path>
+    </symbol>
+
+    <symbol id="icon-checkmark" viewBox="0 0 32 32">
+      <path fill="#4dc274" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"/>
+      <path fill="none" stroke="#fff" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M22.4 11.2l-8.8 9.6-4-4.364"/>
+    </symbol>
   </defs>
 </svg>

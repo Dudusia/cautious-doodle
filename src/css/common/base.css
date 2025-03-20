@@ -18,9 +18,16 @@
   /* CSS Variables */
   --black: #121417;
   --green: #4dc274;
+  --text-accent: #bee8cc;
   --green-hover: #38ae5f;
-  --green_linear: linear-gradient(85deg, var(--green) 2.25%, #bee8cc 131.25%);
+  --green_linear: linear-gradient(
+    85deg,
+    var(--green) 2.25%,
+    var(--text-accent) 131.25%
+  );
   --light-green: #d4fde1;
+  --green-layer-angle: #ffffff80;
+
   --gray: #f3f5f6;
   --white: #fff;
 
@@ -55,4 +62,17 @@ main:has(.back-link) {
   main {
     max-width: 1152px;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
