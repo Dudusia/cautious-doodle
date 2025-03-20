@@ -7,11 +7,9 @@
   font-size: 32px;
   line-height: 1.1;
   font-weight: 700;
-
   position: relative;
   z-index: 2;
 }
-
 
 .our-lessons__description {
   color: rgba(18, 20, 23, 0.5);
@@ -34,7 +32,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  max-width: 1000px; 
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
