@@ -40,10 +40,10 @@ This project utilizes the following core packages and plugins:
   Provides pattern matching functionality, useful in file management during
   builds.
 
-- **[vite-plugin-full-reload](https://github.com/antfu/vite-plugin-full-reload)**  
+- **[vite-plugin-full-reload](https://github.com/ElMassimo/vite-plugin-full-reload)**  
   Automatically reloads the page when specific files change.
 
-- **[vite-plugin-html-inject](https://github.com/anncwb/vite-plugin-html-inject)**  
+- **[vite-plugin-html-inject](https://github.com/donnikitos/vite-plugin-html-inject)**  
   Enables injection of dynamic content into HTML files during the build process.
 
 ## Installation and Setup
