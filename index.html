@@ -19,32 +19,25 @@
       href="https://fonts.googleapis.com/css?family=Manrope:400,600,700"
       rel="stylesheet"
     />
-    <link rel="stylesheet" crossorigin href="/cautious-doodle/assets/index-DRGnu581.css">
+    <link rel="stylesheet" crossorigin href="/cautious-doodle/assets/index-DmveXt5D.css">
   </head>
   <body>
     <header class="header">
   <div class="header-container container">
     <nav class="header-nav">
-      <a href="./index.html" class="header-logo logo"
+      <a href="./" class="header-logo logo"
         >english<span class="logo-accent">excellence</span>.</a
       >
-      <ul class="header-menu">
-        <li class="header-item">
-          <a href="" class="header-item-link">About us</a>
-        </li>
-        <li class="header-item">
-          <a href="" class="header-item-link">Our lessons</a>
-        </li>
-        <li class="header-item">
-          <a href="" class="header-item-link">Teachers</a>
-        </li>
-        <li class="header-item">
-          <a href="" class="header-item-link">Reviews</a>
-        </li>
-        <li class="header-item">
-          <a href="" class="header-item-link">Contact us</a>
-        </li>
-      </ul>
+      <nav class="nav-links header-nav-links">
+  <ul>
+    <li><a href="#about-us" class="header-nav-link">About us</a></li>
+    <li><a href="#our-lessons" class="header-nav-link">Our lessons</a></li>
+    <li><a href="#teachers" class="header-nav-link">Teachers</a></li>
+    <li><a href="#reviews" class="header-nav-link">Reviews</a></li>
+    <li><a href="#contact-us" class="header-nav-link">Contact us</a></li>
+  </ul>
+</nav>
+
       <button
   class="burger-menu-button btn"
   type="button"
@@ -386,7 +379,7 @@
   <div class="container footer-container">
     <div class="info-container">
       <div class="address-container">
-        <a href="./index.html" class="footer-logo logo"
+        <a href="./" class="footer-logo logo"
           >english<span class="logo-accent">excellence</span>.</a
         >
         <address class="footer-address">
@@ -404,25 +397,16 @@
           </ul>
         </address>
       </div>
-      <nav class="footer-nav">
-        <ul class="footer-menu">
-          <li class="footer-item">
-            <a href="" class="footer-item-link">About us</a>
-          </li>
-          <li class="footer-item">
-            <a href="" class="footer-item-link">Our lessons</a>
-          </li>
-          <li class="footer-item">
-            <a href="" class="footer-item-link">Teachers</a>
-          </li>
-          <li class="footer-item">
-            <a href="" class="footer-item-link">Reviews</a>
-          </li>
-          <li class="footer-item">
-            <a href="" class="footer-item-link">Contact us</a>
-          </li>
-        </ul>
-      </nav>
+      <nav class="nav-links footer-nav-links">
+  <ul>
+    <li><a href="#about-us" class="footer-nav-link">About us</a></li>
+    <li><a href="#our-lessons" class="footer-nav-link">Our lessons</a></li>
+    <li><a href="#teachers" class="footer-nav-link">Teachers</a></li>
+    <li><a href="#reviews" class="footer-nav-link">Reviews</a></li>
+    <li><a href="#contact-us" class="footer-nav-link">Contact us</a></li>
+  </ul>
+</nav>
+
       <ul class="social-links {=$class}">
   <li>
     <a
@@ -483,15 +467,16 @@
 
     <div class="mobile-menu-overlay">
   <div class="mobile-menu">
-    <nav>
-      <ul>
-        <li><a href="#about-us">About us</a></li>
-        <li><a href="#our-lessons">Our lessons</a></li>
-        <li><a href="#teachers">Teachers</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact-us">Contact us</a></li>
-      </ul>
-    </nav>
+    <nav class="nav-links mobile-nav-links">
+  <ul>
+    <li><a href="#about-us" class="{=$class-link}">About us</a></li>
+    <li><a href="#our-lessons" class="{=$class-link}">Our lessons</a></li>
+    <li><a href="#teachers" class="{=$class-link}">Teachers</a></li>
+    <li><a href="#reviews" class="{=$class-link}">Reviews</a></li>
+    <li><a href="#contact-us" class="{=$class-link}">Contact us</a></li>
+  </ul>
+</nav>
+
     <ul class="social-links {=$class}">
   <li>
     <a
@@ -563,12 +548,16 @@
     menuCloseButton.addEventListener('click', onClose);
     mobileMenuOverlay.addEventListener('click', onClose);
 
-    mobileMenuOverlay.addEventListener('touchstart', e => {
-      if (e.target === mobileMenuOverlay || e.target === mobileMenu) {
-        e.stopPropagation();
-        e.preventDefault();
-      }
-    });
+    mobileMenuOverlay.addEventListener(
+      'touchstart',
+      e => {
+        if (e.target === mobileMenuOverlay || e.target === mobileMenu) {
+          e.stopPropagation();
+          e.preventDefault();
+        }
+      },
+      { passive: true }
+    );
   })();
 </script>
 
