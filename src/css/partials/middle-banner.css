@@ -12,6 +12,12 @@
     border-radius: 30px;
     padding: 64px 32px;
     min-height: 950px;
+    width: 704px;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    width: 1152px;
+    padding: 64px;
   }
 }
 
@@ -27,6 +33,11 @@
     font-size: 60px;
     line-height: 1.17;
     margin-bottom: 83px;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    width: 776px;
+    margin-bottom: 133px;
   }
 }
 .title-accent {
@@ -54,11 +65,19 @@
     width: 688px;
     height: 500px;
   }
+
+  @media only screen and (min-width: 1280px) {
+    width: 100%;
+    height: 471px;
+  }
 }
 
 .background-layer {
   transform: rotate(-9deg);
   background: var(--light-green);
+  @media only screen and (min-width: 768px) {
+    transform: rotate(-8deg);
+  }
 }
 
 .background-layer.second {
@@ -86,6 +105,11 @@
 
   @media only screen and (min-width: 768px) {
     font-size: 40px;
+    margin-bottom: 32px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 42px;
   }
 }
 .package-list {
@@ -94,8 +118,13 @@
   justify-content: center;
   gap: 16px;
   margin-bottom: 20px;
+
   @media only screen and (min-width: 768px) {
     max-width: 449px;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    max-width: 654px;
   }
 }
 .package-list-item {
@@ -110,6 +139,7 @@
 
   @media only screen and (min-width: 768px) {
     font-size: 20px;
+    line-height: 1.2;
     padding-left: 44px;
   }
 }
