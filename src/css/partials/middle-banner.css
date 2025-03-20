@@ -188,6 +188,9 @@
   line-height: 1.71;
   white-space: nowrap;
   text-align: center;
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 
   @media only screen and (min-width: 375px) {
     padding: 14px 58px;
@@ -199,6 +202,12 @@
     width: auto;
   }
 }
+
+.application-link:hover,
+.application-link:focus {
+  background-color: var(--green-hover);
+}
+
 .bookstack {
   display: none;
 
