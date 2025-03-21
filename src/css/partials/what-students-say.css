@@ -1,5 +1,5 @@
 .students-section {
-    padding: 30px 20px;
+    margin-top: var(--section-margin);
 }
 
 .students-section-title {
@@ -29,7 +29,6 @@
 
 .students-card {
     width: 320px;
-    height: 326px;
     border-radius: 30px;
     background: var(--gray);
     padding: 32px 16px 0px 16px;
@@ -85,7 +84,7 @@
 }
 
 .students-story {
-  padding: 32px 32px 0px;
+  padding: 20px 14px 40px 14px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -96,10 +95,4 @@
 .students-card:hover,
 .students-card:focus {
   transform: scale(1.08);
-}
-
-.students-card {
-    box-shadow: 0px 3px 3px -2px rgb(242, 4, 4),
-    0px 3px 4px 0px rgb(187, 255, 0), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
-    transition: transform 250ms ease-in-out;
 }

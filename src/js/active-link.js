@@ -20,19 +20,10 @@
     container.addEventListener('click', evt => {
       const elem = evt.target;
       removeActiveClass();
-      evt.preventDefault();
       const id = elem.getAttribute('href').split('#')[1];
       containers.forEach(cont => {
         cont?.querySelector(`[href="#${id}"]`).classList.add(activeClass);
       });
-
-      const element = document.getElementById(id);
-
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-      history.pushState(null, '', `#${id}`);
     });
   });
 })();
