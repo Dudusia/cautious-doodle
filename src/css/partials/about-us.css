@@ -34,7 +34,7 @@
   line-height: 30px;
   letter-spacing: 0%;
   text-align: center;
-  color: #12141780;
+  color: var(--dark-blue);
 }
 
 .about-us__content {
