@@ -1,8 +1,7 @@
 .application {
     background-color: var(--white);
     color: var(--black);
-    padding: 30px 20px;
-    margin-bottom: 57px;
+    margin-top: var(--section-margin);
 }
 
 .application_header {
@@ -31,7 +30,7 @@
 }
 
 .submit_text {
-    width: 335px;
+    /* width: 335px; */
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0;
@@ -59,7 +58,7 @@
     letter-spacing: -0.02em;
 
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .application_highlight-box {
@@ -72,7 +71,7 @@
     background-color: #BEE8CC;
     border-radius: 8px;
 
-    z-index: 1;
+    z-index: 0;
 }
 
 /* Form inputs */
@@ -80,7 +79,13 @@
 .apply_form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+    .apply_form {
+        align-items: flex-start;
+    }
+    
 }
 
 .application_text_inputs {
@@ -89,7 +94,7 @@
 }
 
 .application_form_input {
-    width: 335px;
+    /* width: 335px; */
     height: 50px;
     background: none;
     border: 1px solid rgba(18, 20, 23, 0.1);
@@ -114,7 +119,7 @@
 }
 
 .application_form_comment {
-    width: 335px;
+    /* width: 335px; */
     height: 94px;
     background: none;
     border: 1px solid rgba(18, 20, 23, 0.1);
@@ -163,7 +168,7 @@
 }
 
 .application_button {
-    width: 335px;
+    /* width: 335px; */
     height: 52px;
     border: none;
     border-radius: 12px;
@@ -225,11 +230,6 @@
 
 /* Tablet breakpoint */
 @media (min-width: 768px) {
-
-    .application {
-        margin-bottom: 70px;
-    }
-
     .application_header {
         margin-bottom: 64px;
         gap: 16px;
@@ -244,7 +244,7 @@
         height: 20px;
         border-radius: 8px;
 
-        z-index: 1;
+        z-index: 0;
     }
 
     .teachers {

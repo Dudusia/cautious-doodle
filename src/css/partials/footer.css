@@ -1,11 +1,11 @@
 .footer {
+  margin-top: var(--section-margin);
   background-color: var(--black);
+  padding: 40px var(--content-padding) 20px var(--content-padding);
 }
 
 .footer-container {
   margin: 0 auto;
-  padding-bottom: 20px;
-  padding-top: 40px;
 }
 
 .info-container {
@@ -133,8 +133,8 @@
 
 /* #region Tablet */
 @media (min-width: 768px) {
-  .footer-container {
-    padding: 32px 36px 16px 32px;
+  .footer {
+    padding: 32px var(--content-padding) 16px var(--content-padding);
   }
 
   .info-container {
@@ -168,9 +168,12 @@
 
 /* #region Desktop */
 @media (min-width: 1280px) {
+  .footer {
+    padding: 64px var(--content-padding) 23px var(--content-padding);
+  }
+
   .footer-container {
-    max-width: 1280px;
-    padding: 64px 136px 23px 128px;
+    max-width: 1024px;
   }
 
   .address-container {

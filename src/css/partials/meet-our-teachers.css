@@ -1,6 +1,6 @@
 .meet-our-teachers {
   text-align: center;
-  padding: 80px 20px;
+  margin-top: var(--section-margin);
   background-color: #ffffff;
 }
 
@@ -30,7 +30,7 @@
     text-align: center;
 
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
   
   .meet-our-teachers__highlight-box {
@@ -43,7 +43,7 @@
     background-color: #bee8cc;
     border-radius: 8px;
   
-    z-index: 1;
+    z-index: 0;
   }
 
 .section-description {
@@ -95,6 +95,11 @@
   /* Cards in two columns */
   .teachers-grid {
     grid-template-columns: 1fr 1fr;
+    justify-self: center;
+  }
+
+  .teacher-card {
+    max-width: 272px;
   }
 }
 
