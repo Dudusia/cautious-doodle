@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/cautious-doodle/",
-    "preview": "vite preview"
+    "preview": "npx vite build --base=/ && npx vite preview --base=/"
   },
   "devDependencies": {
     "glob": "^11.0.0",

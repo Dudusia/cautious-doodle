@@ -17,3 +17,7 @@
     max-width: 1200px;
   }
 }
+
+.flex {
+  flex: 1;
+}

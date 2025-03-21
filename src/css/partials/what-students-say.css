@@ -12,19 +12,19 @@
 }
 
 .students-section-text {
-    font-weight: 400;
-    margin-top: 16px;
-    font-size: 18px;
-    line-height: 1.66667;
-    text-align: center;
-    color: rgba(18, 20, 23, 0.5);
+  font-weight: 400;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.66667;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
 }
 
 .students-cards {
-    display: flex;
-    margin-top: 64px;
-    gap: 32px;
-    flex-wrap: wrap;
+  display: flex;
+  margin-top: 64px;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 .students-card {
@@ -37,15 +37,15 @@
 }
 
 @media (min-width: 768px) {
-    .students-card {
-        flex: 1 1 calc(50% - 23px);
-    }
+  .students-card {
+    flex: 1 1 calc(50% - 23px);
+  }
 }
 
 @media (min-width: 1280px) {
-    .students-card {
-        flex: 1 1 calc(33.333% - 23px);
-    }
+  .students-card {
+    flex: 1 1 calc(33.333% - 23px);
+  }
 }
 
 .students-item {
@@ -56,10 +56,10 @@
 }
 
 .students-img {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .students-title {
@@ -76,26 +76,26 @@
 }
 
 .students-text {
-    margin-top: 2px;
-    margin-left: 58px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.33333;
-    color: rgba(255, 255, 255, 0.5);
+  margin-top: 2px;
+  margin-left: 58px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .students-story {
-    padding: 32px 32px 0px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: rgba(18, 20, 23, 0.5);
+  padding: 32px 32px 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(18, 20, 23, 0.5);
 }
 
 /* ANIMATION !!! */
 .students-card:hover,
 .students-card:focus {
-    transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 .students-card {
