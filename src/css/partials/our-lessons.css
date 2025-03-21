@@ -1,15 +1,14 @@
 .our-lessons {
   text-align: center;
-  padding: 50px 20px;
+  margin-top: var(--section-margin);
 }
 .our-lessons__title {
   color: var(--black);
   font-size: 32px;
   line-height: 1.1;
   font-weight: 700;
-
   position: relative;
-  z-index: 2;
+  z-index: 0;
 }
 
 .our-lessons__description {
@@ -30,29 +29,21 @@
 .our-lessons__cards {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .lesson-card {
+  flex-basis: calc(50% - 20px / 2);
   background: var(--white);
   color: var(--black);
   padding: 32px;
   border: solid 1px var(--green);
   border-radius: 16px;
-  width: 100%;
-  max-width: 320px;
-  min-width: 280px;
-  height: 400px;
   text-align: center;
-}
-
-@media (min-width: 375px) {
-  .lesson-card {
-    width: 90%;
-    max-width: 340px;
-  }
 }
 
 .lesson-card--highlighted {
@@ -112,14 +103,11 @@
   .our-lessons__description {
     font-size: 18px;
     line-height: 1.6;
-    max-width: 720px;
   }
 
   .our-lessons__cards {
-    max-width: 720px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
   }
   .lesson-button {
     font-size: 18px;

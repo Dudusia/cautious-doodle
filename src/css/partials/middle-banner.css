@@ -1,20 +1,26 @@
+.middle-banner {
+  width: 100%;
+  margin-top: var(--section-margin);
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1152px;
+  }
+}
+
 .middle-banner-wrapper {
   border-radius: 16px;
 
   background: var(--green_linear);
   padding: 40px 20px;
-  min-height: 737px;
   overflow: hidden;
 
   @media only screen and (min-width: 768px) {
     border-radius: 30px;
     padding: 64px 32px;
-    min-height: 950px;
-    width: 704px;
   }
 
   @media only screen and (min-width: 1280px) {
-    width: 1152px;
+    width: 100%;
     padding: 64px;
   }
 }
