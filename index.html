@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <script async type="module" crossorigin src="/cautious-doodle/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/cautious-doodle/assets/index-DLFi20Z9.css">
+    <link rel="stylesheet" crossorigin href="/cautious-doodle/assets/index-Btsz0y48.css">
   </head>
   <body>
     <header class="header">
@@ -615,38 +615,6 @@
     </button>
   </div>
 </div>
-<script>
-  (function () {
-    const menuButton = document.querySelector('.burger-menu-button');
-
-    // Mobile menu
-    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const menuCloseButton = document.querySelector('.btn-mobile-menu-close');
-
-    menuButton.addEventListener('click', () => {
-      mobileMenuOverlay.classList.add('is-open');
-    });
-
-    function onClose() {
-      mobileMenuOverlay.classList.remove('is-open');
-    }
-
-    menuCloseButton.addEventListener('click', onClose);
-    mobileMenuOverlay.addEventListener('click', onClose);
-
-    mobileMenuOverlay.addEventListener(
-      'touchstart',
-      e => {
-        if (e.target === mobileMenuOverlay || e.target === mobileMenu) {
-          e.stopPropagation();
-          e.preventDefault();
-        }
-      },
-      { passive: true }
-    );
-  })();
-</script>
 
   </body>
 </html>
