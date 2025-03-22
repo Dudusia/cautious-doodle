@@ -1,4 +1,7 @@
 .container {
+  transition-property: margin-top;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .flex {

@@ -1,30 +1,54 @@
 .top-banner {
-  display: flex;
-  align-items: flex-end;
   position: relative;
   width: 100%;
-  height: 709px;
   margin: 0 auto;
-  border-radius: 30px;
+  border-radius: 16px;
   overflow: hidden;
   background: linear-gradient(
-    96deg,
-    rgba(0, 0, 0, 0.4) 36.36%,
-    rgba(0, 0, 0, 0) 51.43%
+      96deg,
+      rgba(0, 0, 0, 0.4) 36.36%,
+      rgba(0, 0, 0, 0) 51.43%
     ),
     url(/img/top-banner-335w.webp) no-repeat;
-    background-size: cover;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  @media (min-resolution: 2x) {
+    background: linear-gradient(
+        96deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url(/img/top-banner-335w@2x.webp) no-repeat;
+  }
+
+  background-size: cover;
+  background-position-y: center;
 }
 
 @media (min-width: 768px) {
   .top-banner {
+    border-radius: 30px;
     background: linear-gradient(
-    96deg,
-    rgba(0, 0, 0, 0.4) 36.36%,
-    rgba(0, 0, 0, 0) 51.43%
-    ),
-    url(/img/top-banner-704w.webp) no-repeat;
+        96deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url(/img/top-banner-704w.webp) no-repeat;
+
+    @media (min-resolution: 2x) {
+      background: linear-gradient(
+          96deg,
+          rgba(0, 0, 0, 0.4) 36.36%,
+          rgba(0, 0, 0, 0) 51.43%
+        ),
+        url(/img/top-banner-704w@2x.webp) no-repeat;
+    }
+
     background-size: cover;
+    background-position-y: center;
   }
 }
 
@@ -32,18 +56,39 @@
   .top-banner {
     max-width: 1152px;
     background: linear-gradient(
-    96deg,
-    rgba(0, 0, 0, 0.4) 36.36%,
-    rgba(0, 0, 0, 0) 51.43%
-    ),
-    url(/img/top-banner-1152w.webp) no-repeat;
+        96deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url(/img/top-banner-1152w.webp) no-repeat;
+
+    @media (min-resolution: 2x) {
+      background: linear-gradient(
+          96deg,
+          rgba(0, 0, 0, 0.4) 36.36%,
+          rgba(0, 0, 0, 0) 51.43%
+        ),
+        url(/img/top-banner-1152w@2x.webp) no-repeat;
+    }
+
     background-size: cover;
+    background-position-y: center;
   }
 }
 
 .top-banner__wrapper {
-  padding: 72px 20px;
-  white-space: pre-line;
+  padding: 425px 20px 72px 20px;
+  transition-property: padding;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  @media (min-width: 768px) {
+    padding: 260px 184px 295px 32px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 164px 524px 163px 64px;
+  }
 }
 
 .top-banner__title {
@@ -51,6 +96,11 @@
   font-weight: 700;
   line-height: 40px;
   color: var(--white);
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 1.167;
+  }
 }
 
 .top-banner__title span {
@@ -58,11 +108,12 @@
   display: inline;
 }
 
+/* TODO move to fragment */
 .top-banner__button {
   display: inline-block;
   margin-top: 40px;
-  width: 100%;
   padding: 16px 0px;
+  width: 100%;
   background: #4dc274;
   color: white;
   font-size: 18px;
@@ -71,6 +122,12 @@
   border-radius: 12px;
   text-align: center;
   transition: background 0.3s;
+
+  @media (min-width: 768px) {
+    margin-top: 32px;
+    padding: 16px 64px;
+    width: auto;
+  }
 }
 
 .top-banner__button:hover {
@@ -88,6 +145,16 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition-property: bottom, right, width, height;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  @media (min-width: 768px) {
+    bottom: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .top-banner__scroll-down svg {
