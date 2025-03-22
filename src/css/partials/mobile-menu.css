@@ -6,7 +6,7 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index: 3;
   pointer-events: none;
   background-color: #12141766;
   opacity: 0;
