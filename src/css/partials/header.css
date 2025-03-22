@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100vw;
-  padding: 20px 20px;
+  padding: 20px var(--content-padding);
 }
 
 @media only screen and (min-width: 1280px) {

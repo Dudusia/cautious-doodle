@@ -37,10 +37,17 @@
   }
 }
 
-@media screen and (min-width: 340px) {
+@media screen and (min-width: 375px) {
   .mobile-menu {
-    width: 340px;
-    transform: translateX(340px);
+    width: 240px;
+    transform: translateX(240px);
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .mobile-menu {
+    width: 384px;
+    transform: translateX(384px);
   }
 }
 
