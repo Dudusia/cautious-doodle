@@ -10,7 +10,6 @@ if (!headerBackdrop) {
 let headerHeight = header.offsetHeight;
 document.documentElement.style.setProperty('scroll-padding-top', `${headerHeight + 20}px`);
 headerBackdrop.style.height = `${headerHeight}px`;
-console.log({ headerHeight });
 
 function handleScroll() {
   if (window.scrollY > headerHeight) {
