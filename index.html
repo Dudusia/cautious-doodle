@@ -379,9 +379,15 @@
             <form class="apply_form">
                 <div class="application_form_options">
                     <div class="application_text_inputs">
-                        <input type="text" name="name" class="application_form_input" placeholder="Name" />
-                        <input type="email" name="email" class="application_form_input" placeholder="Email" />
-                        <input type="tel" name="tel" class="application_form_input" placeholder="Phone" />
+                        <input type="text" name="name" class="application_form_input" placeholder="Name" required
+                               pattern="[A-Za-z]{2,}"
+                               title="Name should contain at least two letters" />
+                        <input type="email" name="email" class="application_form_input" placeholder="Email" required
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"
+                               title="Enter correct email (e.g. example@mail.com)" />
+                        <input type="tel" name="tel" class="application_form_input" placeholder="Phone" required
+                               pattern="[0-9]{10,}"
+                               title="Phone number should containt at least 10 digits" />
                         <textarea name="comment" class="application_form_comment" placeholder="Comment"></textarea>
                     </div>
                     <div class="application_radio_inputs">
