@@ -144,7 +144,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition-property: bottom, right, width, height;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
