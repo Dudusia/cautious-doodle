@@ -156,3 +156,7 @@ input {
   border-radius: 0.4em;
   z-index: -1;
 }
+
+textarea {
+  color: var(--black);
+}
