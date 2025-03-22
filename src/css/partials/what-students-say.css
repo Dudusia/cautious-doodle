@@ -25,6 +25,8 @@
   margin-top: 64px;
   gap: 32px;
   flex-wrap: wrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .students-card {
@@ -33,17 +35,23 @@
   background: var(--gray);
   padding: 32px 16px 0px 16px;
   flex: 1 1 100%;
+  position: relative;
+  scroll-snap-align: start;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1279px) {
+  .students-cards {
+    flex-wrap: nowrap;
+  }
+
   .students-card {
-    flex: 1 1 calc(50% - 23px);
+    flex: 0 0 calc(50% - 32px);
   }
 }
 
 @media (min-width: 1280px) {
   .students-card {
-    flex: 1 1 calc(33.333% - 23px);
+    flex: 1 1 calc(33.333% - 32px);
   }
 }
 
@@ -89,10 +97,4 @@
   font-size: 16px;
   line-height: 1.5;
   color: var(--dark-blue);
-}
-
-/* ANIMATION !!! */
-.students-card:hover,
-.students-card:focus {
-  transform: scale(1.08);
 }
