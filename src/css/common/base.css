@@ -51,12 +51,26 @@ body {
   margin: 0;
   color: var(--black);
   --section-margin: 80px;
-  --content-padding: 20px
+  --content-padding: 20px;
+
+  transition-property: filter;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 main {
   flex-grow: 1;
   padding: 8px var(--content-padding) 0px var(--content-padding);
+
+  transition-property: filter;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+footer {
+  transition-property: filter;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 @media (min-width: 768px) {

@@ -1,9 +1,6 @@
 <div class="mobile-menu-overlay">
   <div class="mobile-menu">
-    <load
-      src="partials/components/nav-links.html"
-      class="mobile-nav-links"
-    />
+    <load src="partials/components/nav-links.html" class="mobile-nav-links" />
     <load
       src="partials/components/social-links.html"
       class-link="mobile-socials-link"
@@ -15,35 +12,3 @@
     </button>
   </div>
 </div>
-<script>
-  (function () {
-    const menuButton = document.querySelector('.burger-menu-button');
-
-    // Mobile menu
-    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const menuCloseButton = document.querySelector('.btn-mobile-menu-close');
-
-    menuButton.addEventListener('click', () => {
-      mobileMenuOverlay.classList.add('is-open');
-    });
-
-    function onClose() {
-      mobileMenuOverlay.classList.remove('is-open');
-    }
-
-    menuCloseButton.addEventListener('click', onClose);
-    mobileMenuOverlay.addEventListener('click', onClose);
-
-    mobileMenuOverlay.addEventListener(
-      'touchstart',
-      e => {
-        if (e.target === mobileMenuOverlay || e.target === mobileMenu) {
-          e.stopPropagation();
-          e.preventDefault();
-        }
-      },
-      { passive: true }
-    );
-  })();
-</script>
