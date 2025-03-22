@@ -1,6 +1,8 @@
 .footer {
   margin-top: var(--section-margin);
-  background-color: var(--black);
+  color: var(--footer-color);
+  background-color: var(--footer-bg);
+  border-top: var(--footer-border);
   padding: 40px var(--content-padding) 20px var(--content-padding);
 }
 
@@ -15,11 +17,8 @@
 .footer-logo {
   margin-bottom: 20px;
   display: inline-block;
-  color: var(--white);
-  font-family: Manrope;
   font-size: 20px;
   font-weight: 700;
-  line-height: normal;
 }
 
 .footer-address {
@@ -45,7 +44,6 @@
 }
 
 .footer-address-item-link {
-  color: var(--white);
   font-weight: 600;
   text-decoration: none;
 }
@@ -58,7 +56,6 @@
 }
 
 .footer-nav-link {
-  color: var(--white);
   font-size: 14px;
   font-weight: 600;
   line-height: 1.28;
@@ -83,7 +80,6 @@
 
 .footer-socials-link {
   border-color: var(--border-color);
-  color: var(--white);
 }
 
 .footer-socials-link:focus,
@@ -191,7 +187,6 @@
   }
 
   .footer-nav-link {
-    color: var(--white);
     font-size: 14px;
     font-weight: 600;
     line-height: 1.28;

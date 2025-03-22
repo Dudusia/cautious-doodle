@@ -66,6 +66,12 @@
   transform: translateX(0px);
 }
 
+.mobile-theme-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 .btn-mobile-menu-close {
   position: absolute;
   top: 20px;

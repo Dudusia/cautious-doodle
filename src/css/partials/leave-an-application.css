@@ -51,27 +51,16 @@
     position: relative;
 }
 
-.application_highlight-text {
+.application_title {
     font-weight: 700;
     font-size: 32px;
     line-height: 1.13;
     letter-spacing: -0.02em;
 
-    position: relative;
-    z-index: 1;
-}
-
-.application_highlight-box {
-    position: absolute;
-    top: 23px;
-    left: -1px;
-
-    width: 172px;
-    height: 12px;
-    background-color: #BEE8CC;
-    border-radius: 8px;
-
-    z-index: 0;
+    span {
+        /* TODO need understand why not working without */
+        z-index: 0;
+    }
 }
 
 /* Form inputs */
@@ -97,7 +86,7 @@
     /* width: 335px; */
     height: 50px;
     background: none;
-    border: 1px solid rgba(18, 20, 23, 0.1);
+    border: 1px solid var(--dark-border);
     border-radius: 12px;
     margin-bottom: 18px;
     padding: 16px 0;
@@ -122,7 +111,7 @@
     /* width: 335px; */
     height: 94px;
     background: none;
-    border: 1px solid rgba(18, 20, 23, 0.1);
+    border: 1px solid var(--dark-border);
     border-radius: 12px;
     padding: 16px 0;
     padding-left: 18px;
@@ -203,7 +192,7 @@
 .custom_radio {
     width: 18px;
     height: 18px;
-    border: 2px solid rgba(18, 20, 23, 0.2);
+    border: 2px solid var(--dark-border);
     border-radius: 50%;
     display: inline-block;
     position: relative;
@@ -235,7 +224,7 @@
         gap: 16px;
     }
 
-    .application_highlight-box {
+    /* .application_highlight-box {
         position: absolute;
         top: 32px;
         left: -3px;
@@ -245,7 +234,7 @@
         border-radius: 8px;
 
         z-index: 0;
-    }
+    } */
 
     .teachers {
         flex-direction: row;
@@ -315,7 +304,7 @@
         width: 500px;
     }
 
-    .application_highlight-text {
+    .application_title {
         font-size: 40px;
         line-height: 1.2;
     }

@@ -15,6 +15,7 @@
 
 /* Components style */
 @import url('./partials/components/social-links.css');
+@import url('./partials/components/theme-button.css');
 
 /* Sections style */
 @import url('./partials/header.css');

@@ -17,34 +17,19 @@
   color: #38761d;
 }
 
-.meet-our-teachers__highlight {
-  display: inline-block;
-  position: relative;
-}
-
-.meet-our-teachers__highlight-text {
+.meet-our-teachers__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -2%;
   text-align: center;
 
-  position: relative;
-  z-index: 1;
+  span {
+    /* TODO need understand why not working without */
+    z-index: 0;
+}
 }
 
-.meet-our-teachers__highlight-box {
-  position: absolute;
-  top: 32px;
-  left: 0;
-
-  width: 100%;
-  height: 20px;
-  background-color: var(--text-accent);
-  border-radius: 8px;
-
-  z-index: 0;
-}
 .section-description {
   max-width: 709px;
   margin: 0 auto 40px;

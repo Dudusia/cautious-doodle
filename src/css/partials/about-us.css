@@ -1,6 +1,4 @@
 .about-us {
-  background-color: var(--white);
-  color: var(--black);
   margin: 0 auto;
   margin-top: var(--section-margin);
 }
@@ -13,20 +11,13 @@
   gap: 16px;
 }
 
-.about-us__highlight {
-  display: inline-block;
-  position: relative;
-  align-items: center;
-}
-
-.about-us__highlight-text {
+.about-us__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -2%;
   text-align: center;
   position: relative;
-  z-index: 0;
 }
 
 .about-us__subtitle {
