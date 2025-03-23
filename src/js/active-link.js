@@ -20,7 +20,11 @@
     container.addEventListener('click', evt => {
       const elem = evt.target;
       removeActiveClass();
-      const id = elem.getAttribute('href').split('#')[1];
+      const href = elem.getAttribute('href');
+      if (!href || !href.startsWith('#')) {
+        return;
+      }
+      const id = href.split('#')[1];
       containers.forEach(cont => {
         cont?.querySelector(`[href="#${id}"]`).classList.add(activeClass);
       });
