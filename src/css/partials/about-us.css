@@ -58,7 +58,7 @@
 }
 
 .card__text::before {
-  content: "0" counter(section) ".";
+  content: '0' counter(section) '.';
   counter-increment: section;
   font-weight: 700;
   font-size: 28px;
