@@ -1,0 +1,79 @@
+.application-link {
+  width: 100%;
+  border-radius: 12px;
+  background-color: var(--green);
+  color: var(--white);
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+  white-space: nowrap;
+  text-align: center;
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.56;
+    width: auto;
+  }
+}
+
+.application-link:hover,
+.application-link:focus {
+  background-color: var(--green-hover);
+}
+
+.first-type {
+  padding: 14px 78px;
+  @media (min-width: 768px) {
+    padding: 16px 64px;
+  }
+}
+.second-type {
+  padding: 14px 78px;
+  @media (min-width: 768px) {
+    padding: 16px 63px;
+  }
+  @media (min-width: 1280px) {
+    padding: 16px 39px;
+  }
+}
+
+.highlighted {
+  background: transparent;
+  border: 1px solid var(--white);
+}
+
+.highlighted:hover,
+.highlighted:focus {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.third-type {
+  padding: 14px 0;
+
+  @media only screen and (min-width: 375px) {
+    padding: 14px 58px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding: 16px 64px;
+    font-size: 18px;
+    line-height: 1.56;
+    width: auto;
+  }
+}
+
+/*
+обычные
+padding: 14px 78px  
+padding: 16px 39px 
+*/
+
+/* 
+padding: 16px 39px
+border: 1px solid rgba(255, 255, 255, 0.40);
+ */

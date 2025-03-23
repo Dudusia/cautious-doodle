@@ -186,37 +186,6 @@
   }
 }
 
-.application-link {
-  padding: 14px 0;
-  width: 100%;
-  border-radius: 12px;
-  background-color: var(--green);
-  color: var(--white);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.71;
-  white-space: nowrap;
-  text-align: center;
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-
-  @media only screen and (min-width: 375px) {
-    padding: 14px 58px;
-  }
-  @media only screen and (min-width: 768px) {
-    padding: 16px 64px;
-    font-size: 18px;
-    line-height: 1.56;
-    width: auto;
-  }
-}
-
-.application-link:hover,
-.application-link:focus {
-  background-color: var(--green-hover);
-}
-
 .bookstack {
   display: none;
 

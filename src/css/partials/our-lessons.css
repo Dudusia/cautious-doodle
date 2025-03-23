@@ -74,24 +74,6 @@
   color: var(--white);
 }
 
-.lesson-button {
-  background: var(--green);
-  color: var(--white);
-  padding: 14px 0;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 700;
-  width: 90%;
-}
-.lesson-card--highlighted .lesson-button {
-  color: var(--white);
-  background: transparent;
-  border: 1px solid var(--white);
-}
-
 @media (min-width: 768px) {
   .our-lessons__title {
     font-size: 40px;
