@@ -42,7 +42,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0;
-    color: rgba(18, 20, 23, 0.8);
+    color: var(--dark-blue);
     max-width: 709px;
 }
 
