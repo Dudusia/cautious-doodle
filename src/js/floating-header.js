@@ -7,27 +7,48 @@ if (!headerBackdrop) {
   document.body.insertBefore(headerBackdrop, header);
 }
 
-let headerHeight = header.offsetHeight;
-document.documentElement.style.setProperty('scroll-padding-top', `${headerHeight + 20}px`);
-headerBackdrop.style.height = `${headerHeight}px`;
+function getHeaderHeight() {
+  return header?.getBoundingClientRect().height;
+}
+
+function updateHeaderHeight(height) {
+  document.documentElement.style.setProperty(
+    'scroll-padding-top',
+    `${height + 20}px`
+  );
+  headerBackdrop.style.height = `${height}px`;
+}
+
+let headerHeight = getHeaderHeight();
+updateHeaderHeight(headerHeight);
 
 function handleScroll() {
+  headerHeight = getHeaderHeight();
+  updateHeaderHeight(headerHeight);
   if (window.scrollY > headerHeight) {
-    header.classList.add('is-floating');
+    header?.classList.add('is-floating');
     headerBackdrop?.classList.add('is-visible');
   } else {
-    header.classList.remove('is-floating');
+    header?.classList.remove('is-floating');
     headerBackdrop?.classList.remove('is-visible');
   }
 }
 
-window.addEventListener('scroll', handleScroll, { passive: true });
+function onScroll() {
+  requestAnimationFrame(handleScroll);
+}
 
-window.addEventListener(
-  'resize',
-  () => {
-    headerHeight = header.offsetHeight;
-    headerBackdrop.style.height = `${headerHeight}px`;
-  },
-  { passive: true }
-);
+setTimeout(() => {
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  window.addEventListener(
+    'resize',
+    () => {
+      headerHeight = getHeaderHeight();
+      updateHeaderHeight(headerHeight);
+    },
+    { passive: true }
+  );
+
+  handleScroll();
+}, 300);
