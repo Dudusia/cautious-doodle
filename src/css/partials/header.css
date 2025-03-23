@@ -4,6 +4,7 @@
   justify-content: space-between;
   width: 100vw;
   padding: 20px var(--content-padding);
+  max-height: 67px;
 }
 
 .header-backdrop {
@@ -39,6 +40,7 @@
     max-width: 1024px;
     margin: 0 auto;
     padding: 20px 32px;
+    max-height: 84px;
   }
 
   .header-theme-button {
