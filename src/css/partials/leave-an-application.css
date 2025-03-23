@@ -24,7 +24,6 @@
 }
 
 .application_text {
-    font-family: "Manrope", sans-serif;
     font-weight: 400;
     text-align: center;
 }
@@ -100,7 +99,6 @@
 
 .application_form_input::placeholder {
     color: var(--black);
-    font-family: "Manrope", sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
@@ -126,7 +124,6 @@
 
 .application_form_comment::placeholder {
     color: var(--black);
-    font-family: "Manrope", sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
@@ -149,7 +146,6 @@
     flex-direction: column;
     gap: 8px;
     margin-bottom: 40px;
-    font-family: "Manrope", sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: -0.02em;
@@ -164,7 +160,6 @@
     background-color: var(--green);
     margin-bottom: 16px;
     color: var(--white);
-    font-family: "Manrope", sans-serif;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0;
@@ -347,7 +342,6 @@
     }
 
     .application_left_header {
-        font-family: "Manrope", sans-serif;
         font-size: 40px;
         letter-spacing: -0.02em;
         font-weight: 700;
@@ -357,7 +351,6 @@
     }
 
     .application_left_subtitle {
-        font-family: "Manrope", sans-serif;
         font-size: 16px;
         letter-spacing: 0;
         font-weight: 400;
