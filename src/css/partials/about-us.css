@@ -1,6 +1,7 @@
 .about-us {
   margin: 0 auto;
   margin-top: var(--section-margin);
+  counter-reset: section;
 }
 
 .about-us__header {
@@ -56,7 +57,7 @@
   letter-spacing: -0.56px;
 }
 
-.card__text::before {
+.card::before {
   content: '0' counter(section) '.';
   counter-increment: section;
   font-weight: 700;
