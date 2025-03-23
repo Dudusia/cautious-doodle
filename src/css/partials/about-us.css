@@ -13,9 +13,9 @@
 
 .about-us__title {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: -2%;
+  font-size: 32px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
   text-align: center;
   position: relative;
 }
@@ -24,7 +24,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  letter-spacing: 0%;
   text-align: center;
   color: var(--dark-blue);
 }
@@ -90,6 +89,11 @@
   /* Cards in two columns */
   .about-us__cards {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .about-us__title {
+    font-size: 40px;
+    line-height: 1.2;
   }
 }
 

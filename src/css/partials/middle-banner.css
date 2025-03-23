@@ -16,18 +16,16 @@
 
   @media only screen and (min-width: 768px) {
     border-radius: 30px;
-    padding: 64px 32px;
+    padding: 65px 32px 93px;
   }
 
   @media only screen and (min-width: 1280px) {
-    width: 100%;
-    padding: 64px;
+    padding: 64px 64px 142px;
   }
 }
 
 .middle-banner-title {
   color: var(--white);
-  font-family: Manrope;
   font-size: 38px;
   font-weight: 700;
   line-height: 1.05;
@@ -57,7 +55,7 @@
 
 .layer {
   position: absolute;
-  width: 240px;
+  width: 100%;
   min-height: 408px;
   border-radius: 16px;
 
@@ -66,13 +64,13 @@
   }
 
   @media only screen and (min-width: 768px) {
-    width: 688px;
+    width: 668px;
     height: 500px;
   }
 
   @media only screen and (min-width: 1280px) {
     width: 100%;
-    height: 471px;
+    height: 402px;
   }
 }
 
@@ -80,6 +78,9 @@
   transform: rotate(-9deg);
   background: var(--light-green);
   @media only screen and (min-width: 768px) {
+    transform: rotate(-9.864deg);
+  }
+  @media only screen and (min-width: 1280px) {
     transform: rotate(-8deg);
   }
 }
@@ -87,6 +88,9 @@
 .background-layer.second {
   transform: rotate(11deg);
   background: var(--green-layer-angle);
+  @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    transform: rotate(10.655deg);
+  }
 }
 
 .middle-banner-content {
@@ -97,10 +101,13 @@
     padding: 65px 32px;
     position: relative;
   }
+
+  @media only screen and (min-width: 1280px) {
+    padding: 64px;
+  }
 }
 .package-title {
   color: var(--black);
-  font-family: Manrope;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
@@ -133,7 +140,6 @@
 }
 .package-list-item {
   color: var(--black);
-  font-family: Manrope;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.43;

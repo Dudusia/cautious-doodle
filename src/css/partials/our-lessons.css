@@ -5,22 +5,21 @@
 .our-lessons__title {
   color: var(--black);
   font-size: 32px;
-  line-height: 1.1;
+  line-height: 1.12;
   font-weight: 700;
 }
 
 .our-lessons__description {
   color: var(--dark-blue);
   font-size: clamp(14px, 4vw, 16px);
-  line-height: 1.7;
-  max-width: 90%;
+  line-height: 1.71;
+  max-width: 665px;
   margin: 10px auto 30px;
 }
 
 @media (min-width: 375px) {
   .our-lessons__description {
     font-size: 16px;
-    max-width: 340px;
   }
 }
 
@@ -54,18 +53,20 @@
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 16px;
+  letter-spacing: -0.02em;
 }
 
 .lesson-price {
   font-size: 32px;
-  line-height: 1.1;
+  line-height: 1.12;
   font-weight: 700;
   margin-bottom: 16px;
+  letter-spacing: -0.02em;
 }
 .lesson-description {
   color: var(--dark-blue);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.71;
   margin-bottom: 32px;
 }
 
@@ -91,6 +92,14 @@
   }
   .lesson-button {
     font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .lesson-price {
+    line-height: 1.37;
+  }
+
+  .lesson-description {
     line-height: 1.5;
   }
 }
