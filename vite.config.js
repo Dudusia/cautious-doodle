@@ -12,6 +12,7 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       sourcemap: true,
+      assetsInlineLimit: 0, // Disable inlining of assets
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
@@ -29,6 +30,9 @@ export default defineConfig(({ command }) => {
           assetFileNames: assetInfo => {
             if (assetInfo.name && assetInfo.name.endsWith('.html')) {
               return '[name].[ext]';
+            }
+            if (assetInfo.name && /\.webp$/.test(assetInfo.name)) {
+              return 'assets/[name].[ext]';
             }
             return 'assets/[name]-[hash][extname]';
           },
