@@ -27,10 +27,16 @@ themeButtons.forEach(themeButton => {
     document.documentElement.classList.toggle(darkClassName);
 
     //   TODO uncomment this code to save theme preference in local storage
-    //   if (isDark) {
-    //     localStorage.removeItem(themeKey);
-    //   } else {
-    //     localStorage.setItem(themeKey, themeDarkValue);
-    //   }
+    if (isDark) {
+      localStorage.removeItem(themeKey);
+    } else {
+      localStorage.setItem(themeKey, themeDarkValue);
+    }
   });
 });
+
+const isDark = localStorage.getItem(themeKey) === themeDarkValue;
+updateButtonState(isDark);
+if (isDark) {
+  document.documentElement.classList.add(darkClassName);
+}
