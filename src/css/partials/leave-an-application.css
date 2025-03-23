@@ -330,7 +330,7 @@
 
     .application_card_content {
         padding: 20px 20px 40px 20px;
-        background-color: none;
+        background-color: transparent;
         margin-bottom: 120px;
         border-bottom-right-radius: 30px;
         border-bottom-left-radius: 30px;

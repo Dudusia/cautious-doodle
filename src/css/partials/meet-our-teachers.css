@@ -32,7 +32,6 @@
   display: grid;
   gap: 32px;
   align-items: start;
-  padding: auto;
 }
 
 .teacher-card {
