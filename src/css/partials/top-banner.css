@@ -92,14 +92,14 @@
 }
 
 .top-banner__title {
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.05;
   color: var(--white);
 
   @media (min-width: 768px) {
     font-size: 60px;
-    line-height: 1.167;
+    line-height: 1.17;
   }
 }
 
