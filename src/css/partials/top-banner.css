@@ -98,7 +98,7 @@
 
 
 .top-banner__title span {
-  color: #a3d9a5;
+  color: var(--green);
   display: inline;
 }
 

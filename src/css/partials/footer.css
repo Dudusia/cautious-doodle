@@ -21,6 +21,11 @@
   font-weight: 700;
 }
 
+.footer-logo .logo-accent {
+  /* TODO */
+  color: #1b9341;
+}
+
 .footer-address {
   font-style: normal;
   margin-bottom: 40px;

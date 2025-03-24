@@ -13,7 +13,7 @@
   /* CSS Variables */
   --white: #fff;
   --black: #121417;
-  --green: #4dc274;
+  --green: #006220; /* Original #4dc274 */
   --gray: #f3f5f6;
   --text-accent: #bee8cc;
   --green-hover: #38ae5f;
@@ -23,10 +23,11 @@
     var(--text-accent) 131.25%
   );
   --light-green: #d4fde1;
-  --green-layer-angle: #ffffff80;
+  --light-green-on-green: #fff; /* Original #caedd5 */
+  --green-layer-angle: #fff; /* Original #a6e1ba */
   --border-color: rgba(255, 255, 255, 0.1);
   --light-gray: rgba(255, 255, 255, 0.6);
-  --dark-blue: #12141780;
+  --dark-blue: #565555; /* Original #88898b */
   --dark-border: #dfdfdf;
 
   --title-decor-color: var(--text-accent);
