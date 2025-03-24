@@ -9,7 +9,7 @@
       rgba(0, 0, 0, 0.4) 36.36%,
       rgba(0, 0, 0, 0) 51.43%
     ),
-    url(/img/top-banner-335w.webp) no-repeat;
+    url(/img/top-banner-335w.webp) no-repeat center/cover;
 
   @media (min-width: 768px) {
     display: block;
@@ -21,11 +21,8 @@
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%
       ),
-      url(/img/top-banner-335w@2x.webp) no-repeat;
+      url(/img/top-banner-335w@2x.webp) no-repeat center/cover;
   }
-
-  background-size: cover;
-  background-position-y: center;
 }
 
 @media (min-width: 768px) {
@@ -36,7 +33,7 @@
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%
       ),
-      url(/img/top-banner-704w.webp) no-repeat;
+      url(/img/top-banner-704w.webp) no-repeat center/cover;
 
     @media (min-resolution: 2x) {
       background: linear-gradient(
@@ -44,11 +41,8 @@
           rgba(0, 0, 0, 0.4) 36.36%,
           rgba(0, 0, 0, 0) 51.43%
         ),
-        url(/img/top-banner-704w@2x.webp) no-repeat;
+        url(/img/top-banner-704w@2x.webp) no-repeat center/cover;
     }
-
-    background-size: cover;
-    background-position-y: center;
   }
 }
 
@@ -60,7 +54,7 @@
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%
       ),
-      url(/img/top-banner-1152w.webp) no-repeat;
+      url(/img/top-banner-1152w.webp) no-repeat center/cover;
 
     @media (min-resolution: 2x) {
       background: linear-gradient(
@@ -68,11 +62,8 @@
           rgba(0, 0, 0, 0.4) 36.36%,
           rgba(0, 0, 0, 0) 51.43%
         ),
-        url(/img/top-banner-1152w@2x.webp) no-repeat;
+        url(/img/top-banner-1152w@2x.webp) no-repeat center/cover;
     }
-
-    background-size: cover;
-    background-position-y: center;
   }
 }
 
