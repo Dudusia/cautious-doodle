@@ -26,18 +26,21 @@
 }
 
 .first-type {
-  padding: 14px 78px;
+  padding: 14px 0;
+  width: 100%;
   @media (min-width: 768px) {
     padding: 16px 64px;
+    width: unset;
   }
 }
 .second-type {
-  padding: 14px 78px;
+  padding: 14px 0;
+  width: 100%;
   @media (min-width: 768px) {
-    padding: 16px 63px;
+    padding: 16px 0;
   }
   @media (min-width: 1280px) {
-    padding: 16px 39px;
+    padding: 16px 0;
   }
 }
 
@@ -66,14 +69,3 @@
     width: auto;
   }
 }
-
-/*
-обычные
-padding: 14px 78px  
-padding: 16px 39px 
-*/
-
-/* 
-padding: 16px 39px
-border: 1px solid rgba(255, 255, 255, 0.40);
- */
