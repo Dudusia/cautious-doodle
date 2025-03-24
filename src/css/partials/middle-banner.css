@@ -12,6 +12,7 @@
 
   background: var(--green_linear);
   padding: 40px 20px;
+  padding-bottom: 472px;
   overflow: hidden;
 
   @media only screen and (min-width: 768px) {
